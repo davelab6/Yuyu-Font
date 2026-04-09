@@ -7,7 +7,8 @@
 # sources/ directory, so all paths should be relative to that
 # directory.
 sources:
-  - yuyu.glyphs
+  - yuyumid.glyphs
+  - yuyushort.glyphs
 # You don't have to supply the family name, but builds are slightly
 # faster if you do.
 familyName: "yuyu"
@@ -23,7 +24,6 @@ otDir: $outputDir/otf
 woffDir: $outputDir/webfonts
 
 # The following entries, which are either "true" or "false"
-# determine which targets to build. We turn off OTFs for this demo.
 
 buildVariable: true
 buildStatic: true
@@ -33,7 +33,7 @@ buildSmallCap: false
 
 # The next flags control autohinting.
 autohintTTF: true
-autohintOTF: false
+autohintOTF: true
 ttfaUseScript: false  # Set this to true if your font is not Latin
 
 # The "fix" operation can optionally fix some problems which
@@ -62,7 +62,7 @@ ttfaUseScript: false  # Set this to true if your font is not Latin
 # if you specify a dictionary which does not contain an entry
 # for each VF file built.
 stat:
-  yuyu[wght].ttf:
+  yuyumid[wght].ttf:
   - name: Weight
     tag: wght
     values:
@@ -70,3 +70,11 @@ stat:
       value: 400
       linkedValue: 400
       flags: 2
+  yuyushort[wght].ttf:
+    - name: Weight
+      tag: wght
+      values:
+      - name: Regular
+        value: 400
+        linkedValue: 400
+        flags: 2
