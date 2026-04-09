@@ -4,5 +4,5 @@
 #
 # Names should be added to this file as:
 # Name or Organization <email address>
-Julia Garcia Lopez <theartEofjulia@gmail.com>
 
+Julia Garcia Lopez <theartEofjulia@gmail.com>
